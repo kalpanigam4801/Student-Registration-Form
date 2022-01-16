@@ -1,0 +1,94 @@
+<html>
+<head>
+<script type="text/javascript" src="script.js">
+</script>
+</head>
+<body>
+<form action="#" name="StudentRegistration" onSubmit="return(validate());">
+<table cellpadding="2" width="20%" bgcolor="99FFFF" align="center" cellspacing="2">
+<tr>
+ <td colspan=2>
+ <center><font size=4><b>Student Registration Form</b></font></center>
+ </td>
+</tr>
+<tr>
+ <td>Name</td>
+ <td><input type=text name=textnames id="name" size="30"></td>
+</tr>
+<tr>
+ <td>Registration Number</td>
+ <td><input type="text" name="regdno" id="regdno" size="30"></td>
+</tr>
+<tr>
+ <td>Course</td>
+ <td><select name="Course" id="course">
+    <option value="-1" selected>Select...</option>
+    <option value="B.Tech">B.Tech</option>
+    <option value="Integrated B.Tech + M.Tech (Dual Degree)">Integrated B.Tech + M.Tech (Dual Degree)</option>
+    <option value="M.Tech">M.Tech</option>
+    <option value="MCA">MCA</option>
+    <option value="B.Arch">B.Arch</option>
+    <option value="Integrated M.Sc.">Integrated M.Sc.</option>
+    </select></td>
+</tr>
+<tr>
+ <td>Branch</td>
+ <td><select name="Branch" id="branch">
+    <option value="-1" selected>Select...</option>
+    <option value="CSE">CSE</option>
+    <option value="IT">IT</option>
+    <option value="EE">EE</option>
+    <option value="ETC">ETC</option>
+    <option value="EEE">EEE</option>
+    <option value="ME">ME</option>
+    <option value="CE">CE</option>
+    <option value="CME">CME</option>
+    <option value="MME">MME</option>
+    <option value="PE">PE</option>
+    </select></td>
+</tr>
+<tr>
+ <td>Current Semester</td>
+ <td><select name="currentsemester" id="currsem">
+    <option value="-1" selected>Select...</option>
+    <option value="1st">1st</option>
+    <option value="2nd">2nd</option>
+    <option value="3rd">3rd</option>
+    <option value="4th">4th</option>
+    <option value="5th">5th</option>
+    <option value="6th">6th</option>
+    <option value="7th">7th</option>
+    <option value="8th">8th</option>
+    <option value="9th">9th</option>
+    <option value="10th">10th</option>
+    </select></td>
+</tr>
+<tr>
+ <td>Batch</td>
+ <td><input type="text" name="batch" id="batch" size="30"></td>
+</tr>
+<tr>
+ <td>Address</td>
+ <td><input type=text name="address" id="address" size="30"></td>
+</tr>
+<tr>
+ <td>Phone Number</td>
+ <td><input type=text name="phonenumber" id="phonenumber" size="30"></td>
+</tr>
+<tr>
+ <td>Gender</td>
+ <td><input type="radio" name="Gender" id="gender" value="Male"/>Male<input type="radio" name="Gender" value="Female"/>Female</td>
+</tr>
+<tr>
+ <td>Highest Degree</td>
+ <td><input type=text name="highestdegree" id="highestdegree" size="30"></td>
+<tr>
+ <td colspan="2" align="center">
+ <input type="submit" value="Submit" class="btn" onclick="validate()"/>
+ <input type="reset" value="Reset" onclick="clearFunc()" id="res" class="btn"/></td>
+ </td>
+</tr>
+</table>
+</form>
+</body>
+</html>
